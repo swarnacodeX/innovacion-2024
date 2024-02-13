@@ -1,0 +1,32 @@
+/* components/Card.module.css */
+
+.card {
+    width: 10px;
+    margin-left: 70px;
+    padding: 50px 60px 20px;
+    border: 9px solid #ffffff;
+    border-radius: 8px;
+    
+    
+  }
+  
+  .imagecard {
+    position:relative;
+    margin-left: -48px;
+    width: 96px;
+    height: auto;
+  }
+  
+  .title {
+    margin-left: -48px;
+    color: #ffffff;
+    font-size: 28px;
+  }
+  
+  .description {
+    margin-left: -48px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  

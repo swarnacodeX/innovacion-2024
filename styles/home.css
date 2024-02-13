@@ -1,0 +1,151 @@
+.homebutton{
+    color: #ffffff;
+    position: absolute;
+    top: 50px;
+    right:760px;
+    
+
+
+}
+.aboutbutton{color: #ffffff;
+    position: absolute;
+    top: 50px;
+    right:695px;
+}
+.eventsbutton{color: #ffffff;
+    position: absolute;
+    top: 50px;
+    right:650px;
+}
+.schedulebutton{color: #ffffff;
+    position: absolute;
+    top: 50px;
+    right:530px;
+}
+.gallerybutton{color: #ffffff;
+    position: absolute;
+    top: 50px;
+    right:460px;
+}
+.partnersbutton{color: #ffffff;
+    position: absolute;
+    top: 50px;
+    right:380px;
+}
+.contactusbutton{color: #ffffff;
+    position: absolute;
+    top: 50px;
+    right:280px;
+}
+.registerbutton{
+    position: absolute;
+    top: 40px;
+    right:130px;
+}
+/* GradientButton.css */
+
+.registerbutton1 {
+    background: linear-gradient(to right, #bf30ba, #538af0);
+    color: #fff;
+    border: 2px solid #be3dd5; /* Add an outline to the button border */
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 20px; /* Adjust the border-radius for the desired level of curvature */
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease, border 0.3s ease; /* Add border transition */
+  }
+  
+  .registerbutton1:hover {
+    background: linear-gradient(to right, #538af0, #bf30ba);
+    border: 2px solid #6495ed; /* Adjust the hover border color */
+  }
+  .homebutton:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff00ff, #8800ff); /* Change the color of the underline if needed */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .aboutbutton:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff00ff, #8800ff); /* Change the color of the underline if needed */
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    left: 0;
+  }
+  .eventsbutton:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff00ff, #8800ff); /* Change the color of the underline if needed */
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+  }
+  .schedulebutton:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff00ff, #8800ff); /* Change the color of the underline if needed */
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    left: 0;
+  }
+  .gallerybutton:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff00ff, #8800ff); /* Change the color of the underline if needed */
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+  }
+  .contactusbutton:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff00ff, #8800ff); /* Change the color of the underline if needed */
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+  }
+  .partnersbutton:hover::after {
+    content: '';
+    display: block;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff00ff, #8800ff); /* Change the color of the underline if needed */
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+  transition: opacity 0.3s ease; 
+  }
+  .partnersbutton:hover::after {
+  opacity: 1; /* Make the underline visible on hover */
+}
+/* home.css */
+
+
+
+  
+
