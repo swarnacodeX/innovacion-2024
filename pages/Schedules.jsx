@@ -1,7 +1,7 @@
 // ComingSoon.js
 'use client';
 
-import { Footer, Navbar } from '../components';
+import { Footer, Navbar} from '../components';
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 import React from 'react'
 import '../styles/globals.css';
-import '../styles/home.css';
+
 import Image from 'next/image';
 
 

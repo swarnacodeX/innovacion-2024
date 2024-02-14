@@ -1,8 +1,8 @@
-import { Footer, Navbar } from '../components';
+import { Footer, Navbar} from '../components';
 
 import React from 'react'
 import '../styles/globals.css';
-import '../styles/home.css';
+
 
 import Image from 'next/image';
 

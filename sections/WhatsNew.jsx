@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { newFeatures } from '../components/constants';
+import { newFeatures, newFeatures2 } from '../components/constants';
 import { NewFeatures, TitleText, TypingText } from '../components';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 import Link from 'next/link';
@@ -24,7 +24,7 @@ const WhatsNew = () => (
         <TypingText title="| Register Here" />
         <TitleText title={<>Event Registration</>} />
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
-          {newFeatures.map((feature) => (
+          {newFeatures2.map((feature) => (
             <NewFeatures key={feature.title} {...feature} />
           ))}
         </div>

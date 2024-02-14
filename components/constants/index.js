@@ -47,13 +47,22 @@ export const newFeatures = [
     imgUrl: '/vrpano.svg',
     title: 'Special offer',
     subtitle:
-        'Central Registration Rs. 400 Early Bird Registration Rs. 300  Early Bird offers remains till 14th February, 2024',
+        'Central Registration Rs. 400. Early Bird Registration Rs. 300   Early Bird offers remains till 21st February, 2024',
   },
   {
     imgUrl: '/headset.svg',
     title: 'Details',
     subtitle:
-        'Aperture:Rs 200 2 photos   max 2 pic Robospace : Rs 200 per person  Hell in the Cell: 2000 per team  Innovare: 350 per person 360CodeCraft: 200 per person',
+        'Aperture:Rs 200 2 photos   max 2 pic.   Robospace : Rs 200 per person.   \n  Hell in the Cell: 2000 per team.    Innovare: 350 per person 360CodeCraft: 200 per person',
+  },
+];
+export const newFeatures2 = [
+  
+  {
+    imgUrl: '/headset.svg',
+    title: 'Details',
+    subtitle:
+    'Aperture:Rs 200 2 photos   max 2 pic.   Robospace : Rs 200 per person.   \n  Hell in the Cell: 2000 per team.    Innovare: 350 per person 360CodeCraft: 200 per person. SEE MORE INDIVIDUAL EVENTS AT RS.200 EACH',
   },
 ];
 export const newFeatures1 = [

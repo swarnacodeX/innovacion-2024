@@ -2,7 +2,7 @@
 
 import React from 'react';
 import '../styles/ContactUs.module.css';
-import { Footer, Navbar } from '../components';
+import { Footer, Navbar} from '../components';
 import Card from '../components/contactcard';
 import '../styles/globals.css';
 import { motion } from 'framer-motion';
@@ -11,6 +11,26 @@ import { TitleText } from '../components';
 import {staggerContainer } from '../utils/motion';
 
 const cardsData = [
+  {
+    imageUrl: '#',
+    title: 'Biswajit Das',
+    description1: 'Graphics and Content Head, ',
+    description2: 'PR & Outreach, Planning',
+    description3: 'and Infrastructure',
+    phoneNumber: '+919830123475',
+  },
+  {
+    imageUrl: '/soumanka.png',
+    title: 'Soumanka Sarkar',
+    description1: 'Project Exhibitions Lead',
+    phoneNumber: '+919748598127',
+  },
+  {
+    imageUrl: '/rohan.png',
+    title: 'Rohan Goswami',
+    description1: 'Robotics Lead & Collaboration',
+    phoneNumber: '+918207201751',
+  },
     {
       imageUrl: '/sayan.png',
       title: 'Sayan Dey',
@@ -37,26 +57,7 @@ const cardsData = [
         description1: 'Social Media Publicity ',
         phoneNumber: '+918116006315',
       },
-      {
-        imageUrl: '#',
-        title: 'Biswajit Das',
-        description1: 'Graphics and Content Head, ',
-        description2: 'PR & Outreach, Planning',
-        description3: 'and Infrastructure',
-        phoneNumber: '+919830123475',
-      },
-      {
-        imageUrl: '/soumanka.png',
-        title: 'Soumanka Sarkar',
-        description1: 'Project Exhibitions Lead',
-        phoneNumber: '+919748598127',
-      },
-      {
-        imageUrl: '/rohan.png',
-        title: 'Rohan Goswami',
-        description1: 'Robotics Lead & Collaboration',
-        phoneNumber: '+918207201751',
-      },
+      
       {
         imageUrl: '/shrishtika.png',
         title: 'Srishtika Majumder',

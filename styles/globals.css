@@ -112,47 +112,50 @@
   filter: blur(150px);
 }
 .homebutton{
+  color: #ffffff;
   position: fixed;
-  top: 50px;
-  right:730px;
+  top: 60px;
+  right:1080px;
 
 }
 .aboutbutton{
   position: fixed;
-  top: 50px;
-  right:660px;
+  color: #ffffff;
+  top: 60px;
+  right:990px;
 }
 .eventsbutton{
+  color: #ffffff;
   position: fixed;
-  top: 50px;
-  right:585px;
+  top: 60px;
+  right:895px;
 }
 .schedulebutton{
+  color: #ffffff;
   position: fixed;
-  top: 50px;
-  right:500px;
+  top: 60px;
+  right:790px;
 }
 .gallerybutton{
+  color: #ffffff;
   position: fixed;
-  top: 50px;
-  right:430px;
+  top: 60px;
+  right:690px;
 }
 .partnersbutton{
+  color: #ffffff;
   position: fixed;
-  top: 50px;
-  right:350px;
+  top: 60px;
+  right:590px;
 }
 .contactusbutton{
+  color: #ffffff;
   position: fixed;
-  top: 50px;
-  right:250px;
+  top: 60px;
+  right:490px;
 }
-.registerbutton{
-  position: fixed;
-  top: 40px;
-  right:130px;
-}
-/* GradientButton.css */
+
+
 
 .registerbutton1 {
   background: linear-gradient(to right, #bf30ba, #538af0);
@@ -184,6 +187,16 @@
   left: 0;
 }
 .aboutbutton:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff; /* Change the color of the underline if needed */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.schedulebutton:hover::after {
   content: '';
   display: block;
   width: 100%;

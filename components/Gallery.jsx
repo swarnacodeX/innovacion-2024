@@ -6,7 +6,7 @@ import { TitleText, TypingText } from '.';
 import { slideIn, staggerContainer, fadeIn } from '../utils/motion';
 import React from 'react'
 import '../styles/globals.css';
-import '../styles/home.css';
+
 
 
 

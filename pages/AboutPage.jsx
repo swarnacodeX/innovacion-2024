@@ -4,7 +4,7 @@ import React from 'react';
 
 import { motion } from 'framer-motion';
 import { TitleText, TypingText } from '../components';
-import { Footer, Navbar} from '../components';
+import { Footer, Navbar } from '../components';
 
 import styles from '../styles';
 import AboutCarousel from '../components/AboutCarousel';
