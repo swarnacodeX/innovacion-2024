@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-
+import Link from 'next/link';
 import styles from '../styles';
 import { exploreWorlds } from '../components/constants';
 import { staggerContainer } from '../utils/motion';
@@ -27,13 +27,13 @@ const Explore = () => {
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {exploreWorlds.map((world, index) => (
-            <ExploreCard
+           <Link href='/Events'> <ExploreCard
               key={world.id}
               {...world}
               index={index}
               active={active}
               handleClick={setActive}
-            />
+            /></Link>
           ))}
         </div>
       </motion.div>
