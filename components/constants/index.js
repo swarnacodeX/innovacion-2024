@@ -53,7 +53,7 @@ export const newFeatures = [
     imgUrl: '/headset.svg',
     title: 'Details',
     subtitle:
-        'Aperture:Rs 200 2 photos   max 2 pic.   Robospace : Rs 200 per person.   \n  Hell in the Cell: 2000 per team.    Innovare: 200 per person 360CodeCraft: 200 per person',
+        "🎉 Dive into the exhilarating world of Innovacion, the ultimate techno-management fest of IEM, KOLKATA! 🚀 Experience the convenience of Central Registration, where you can sign up for any 5 events at a fraction of the cost, excluding gaming and photography (APERTURE).  💼 Don't let this opportunity slip away – showcase your talents and skills while saving big! 💰 Whether you're passionate about robotics, coding, or entrepreneurship, there's something for everyone at Innovacion. 🔥 Join us and immerse yourself in a whirlwind of innovation, creativity, and excitement! 🌟 Register now and be part of the unforgettable journey!",
   },
 ];
 export const newFeatures2 = [
