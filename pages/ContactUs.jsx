@@ -25,12 +25,7 @@ const cardsData = [
     description1: 'Project Exhibitions Lead',
     phoneNumber: '+919748598127',
   },
-  {
-    imageUrl: '/rohan.png',
-    title: 'Rohan Goswami',
-    description1: 'Robotics Lead & Collaboration',
-    phoneNumber: '+918207201751',
-  },
+ 
     {
       imageUrl: '/sayan.png',
       title: 'Sayan Dey',

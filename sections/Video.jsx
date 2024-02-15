@@ -19,10 +19,10 @@ function Video() {
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-        <video width="1248" height="720" controls={false} preload='none' autoPlay muted loop>
+      <video width="1248" height="720" controls={false} preload='none' autoPlay muted loop>
     <source src='/Innovocion_Logo_Animation.mp4'type='video/mp4'  />
     </video>
-    </motion.div>
+   </motion.div>
     </section>
   )
 }
