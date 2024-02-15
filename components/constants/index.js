@@ -53,7 +53,7 @@ export const newFeatures = [
     imgUrl: '/headset.svg',
     title: 'Details',
     subtitle:
-        'Aperture:Rs 200 2 photos   max 2 pic.   Robospace : Rs 200 per person.   \n  Hell in the Cell: 2000 per team.    Innovare: 350 per person 360CodeCraft: 200 per person',
+        'Aperture:Rs 200 2 photos   max 2 pic.   Robospace : Rs 200 per person.   \n  Hell in the Cell: 2000 per team.    Innovare: 200 per person 360CodeCraft: 200 per person',
   },
 ];
 export const newFeatures2 = [
@@ -62,7 +62,7 @@ export const newFeatures2 = [
     imgUrl: '/headset.svg',
     title: 'Details',
     subtitle:
-    'Aperture:Rs 200 2 photos   max 2 pic.   Robospace : Rs 200 per person.   \n  Hell in the Cell: 2000 per team.    Innovare: 350 per person 360CodeCraft: 200 per person. SEE MORE INDIVIDUAL EVENTS AT RS.200 EACH',
+    'Aperture:Rs 200 2 photos   max 2 pic.   Robospace : Rs 200 per person.   \n  Hell in the Cell: 2000 per team.    Innovare: 200 per person 360CodeCraft: 200 per person. SEE MORE INDIVIDUAL EVENTS AT RS.200 EACH',
   },
 ];
 export const newFeatures1 = [
