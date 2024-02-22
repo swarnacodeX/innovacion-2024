@@ -862,7 +862,7 @@ const RoboCarousel = () => {
         </div>
 
         <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
-        "Get ready for the biggest techfest of Kolkata - Innovación 2024! Join our 36-Hour Virtual Hackathon focusing on generative AI. All levels welcome. Builders, creators, and innovators, this is for you!"
+        "Get ready for the biggest techfest of Kolkata - Innovación 2024! Join our 24-Hour in-person Hackathon focusing on AI. All levels welcome. Builders, creators, and innovators, this is for you!"
         </p>
       </motion.div>
 
