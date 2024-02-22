@@ -35,15 +35,7 @@ return (
           >
             <TypingText title="| How to Register" />
             <TitleText title={<>Central Registration</>} />
-            {/* <div className="mt-[31px] flex flex-col max-w-[395px] gap-[24px]">
-              {startingFeatures.map((feature, index) => (
-                <StartSteps
-                key={feature}
-                number={`${index < 10 ? '0' : ''} ${index + 1}`}
-                  text={feature}
-                />
-              ))}
-            </div> */}<div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
+            <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
           {newFeatures.map((feature) => (
             <NewFeatures key={feature.title} {...feature} />
           ))}

@@ -329,7 +329,7 @@ const RoboCarousel = () => {
         className="relative flex-1 flex justify-center items-center"
       >
         <Image
-          src="/hellinacell.jpg"
+          src="/hellinacell.webp"
           alt="planet-09" width={900} height={550}
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />

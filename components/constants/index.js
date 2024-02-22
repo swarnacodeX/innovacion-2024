@@ -47,7 +47,7 @@ export const newFeatures = [
     imgUrl: '/vrpano.svg',
     title: 'Special offer',
     subtitle:
-        'Central Registration Rs. 400. Early Bird Registration Rs. 300   Early Bird offers remains till 21st February, 2024',
+        'Central Registration Rs. 400. Early Bird Registration Rs. 300   Early Bird offers remains till 24st February, 2024',
   },
   {
     imgUrl: '/headset.svg',
