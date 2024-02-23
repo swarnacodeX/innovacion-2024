@@ -13,14 +13,20 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
-
-  const handleWindowResize = () => {
+  const handleScrollToGetStarted = () =>{
+    const getStartedSection = document.getElementById('regis');
+    if (getStartedSection) {
+      getStartedSection.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+const handleWindowResize = () => {
     setShowMobileNav(window.innerWidth < 960);
     setOpenNav(false); // Close the mobile nav when resizing to desktop view
   };
 
   useEffect(() => {
-    handleWindowResize(); // Call the handler initially
+    handleWindowResize();
+    // Call the handler initially
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
@@ -52,7 +58,7 @@ const Navbar = () => {
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/GalleryPage'>Gallery</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/Partners'>Partners</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/ContactUs'>Contact  Us</Link>
-      <a href="#regis"><button className='registerbutton1'>Register</button></a>
+      <button onClick={handleScrollToGetStarted}className='registerbutton1'>Register</button>
       </div>
       <Image
   src="/innovacion2k24-logo.png"
@@ -80,7 +86,7 @@ const Navbar = () => {
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/GalleryPage'>Gallery</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/Partners'>Partners</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/ContactUs'>Contact  Us</Link>
-      <a href="#regis"><button className='registerbutton1'>Register</button></a>
+      <a href='https://forms.gle/GtswDucZwmD81DqcA'><button className='registerbutton1'>Register</button></a>
       </div>
       </div>
   </motion.nav>

@@ -6,7 +6,18 @@ import Image from 'next/image';
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 
-const Footer = () => (
+
+
+const Footer = () => {
+ const handleScrollToGetStarted = () =>{
+    const getStartedSection = document.getElementById('regis');
+    if (getStartedSection) {
+      getStartedSection.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+  
+  return (
+
   <motion.footer
     variants={footerVariants}
     initial="hidden"
@@ -19,7 +30,7 @@ const Footer = () => (
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
           Enter the Metaverse
         </h4>
-        <a href="/"><div><button className='registerbutton1 rounded-[32px] gap-[12px]'>Register</button></div></a>
+        <div><button href="#regis" onClick={handleScrollToGetStarted} className='registerbutton1 rounded-[32px] gap-[12px]'>Register</button></div>
       </div>
 
       <div className="flex flex-col">
@@ -51,5 +62,5 @@ const Footer = () => (
     </div>
   </motion.footer>
 );
-
+            }
 export default Footer;
