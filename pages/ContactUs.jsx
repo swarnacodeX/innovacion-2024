@@ -12,9 +12,23 @@ import {staggerContainer } from '../utils/motion';
 
 const cardsData = [
   {
-    imageUrl: '#',
+    imageUrl: '/sayan.png',
+    title: 'Sayan Dey',
+    description1: 'Logistics & Procurement,',
+    description2: 'Budget, Graphics',
+    phoneNumber: '+918961838933',
+  },
+  {
+      imageUrl: '/arkaprobho.png',
+      title: 'Arkaprobho Laha',
+      description1: 'Website, Registration,',
+      description2: 'Database Management',
+      phoneNumber: '+917477542614',
+    },
+  {
+    imageUrl: '/biswajit.png',
     title: 'Biswajit Das',
-    description1: 'Graphics and Content Head, ',
+    description1: 'Content Head, ',
     description2: 'PR & Outreach, Planning',
     description3: 'and Infrastructure',
     phoneNumber: '+919830123475',
@@ -26,20 +40,7 @@ const cardsData = [
     phoneNumber: '+919748598127',
   },
  
-    {
-      imageUrl: '/sayan.png',
-      title: 'Sayan Dey',
-      description1: 'Logistics & Procurement,',
-      description2: 'Budget',
-      phoneNumber: '+918961838933',
-    },
-    {
-        imageUrl: '/arkaprobho.png',
-        title: 'Arkaprobho Laha',
-        description1: 'Registration & Database',
-        description2: 'Management',
-        phoneNumber: '+917477542614',
-      },
+    
       {
         imageUrl: '/sohel.png',
         title: 'Sohel Hassan',
