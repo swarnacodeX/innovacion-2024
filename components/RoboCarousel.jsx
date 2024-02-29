@@ -2,7 +2,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from '../styles';
 import Image from 'next/image';
 import { TitleText } from '.';
@@ -16,6 +16,308 @@ const RoboCarousel = () => {
     };
     init();
   }, []);
+  const [loading, setLoading] = useState(false);
+
+  const PDFADMNIA = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/ADMANIA RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'admania-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFBGMI = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/BGMI RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'BGMI-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFCODEBREAK = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/CODEBREAK ODYSSEY RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'CODEBREAK-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFCODESPHERE = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/CODESPHERE RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'CODESPHERE-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFEUREKA = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/EUREKA RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'EUREKA-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFFIFA = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/FIFA RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'FIFA-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFHELLINACELL = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/HELL IN A CELL RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'HELLINACELL-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFPIXEL = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/PIXEL PIONEER RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'PIXELPIONEER-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFQUIZ = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/QUIZ CRUSADE RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'QUIZ CRUSADE-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFBULL = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/THE BULL MASTER RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'TBM-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFVALIANTS = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/VALIANTS RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'VALIANTS-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFHACKAI = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/HACK-AI RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'HACK-AI-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     
@@ -285,6 +587,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+          
             src="/stamprobospace.png"
             alt="stamp" width={900} height={550}
             className="w-[155px] h-[155px] object-contain"
@@ -339,7 +642,8 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamphellinacell.png"
+          onClick={PDFHELLINACELL}
+            src="/stamp.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -450,7 +754,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampinnovare.png"
+            src="/stamp.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -504,7 +808,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampelectro.png"
+            src="/stamp.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -558,7 +862,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampaperture.png"
+            src="/stamp.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -611,7 +915,8 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamppixelpioneer.png"
+          onClick={PDFPIXEL}
+            src="/stamp.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -665,7 +970,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampcyberthon.png"
+            src="/stamp.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -773,6 +1078,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFCODEBREAK}
             src="/stampcodebreak.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
@@ -817,6 +1123,7 @@ const RoboCarousel = () => {
         className="relative flex-1 flex justify-center items-center"
       >
         <Image
+        onClick={PDFCODESPHERE}
           src="/codesphere.jpg"
           alt="planet-09" width={155} height={155}
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
@@ -881,6 +1188,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFHACKAI}
             src="/stamphackai.png"
             alt="stamp" width={10} height={10}
             className="w-[155px] h-[155px] object-contain"
@@ -935,6 +1243,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFADMNIA}
             src="/stampadmania.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
@@ -989,7 +1298,8 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampeureka.png"
+          onClick={PDFEUREKA}
+            src="/stamp.png"
             alt="stamp"width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1044,7 +1354,8 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampbull.png"
+          onClick={PDFBULL}
+            src="/stamp.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1098,7 +1409,8 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampbgmi.png" 
+          onClick={PDFBGMI}
+            src="/stamp.png" 
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1152,7 +1464,8 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampvaliants.png"
+          onClick={PDFVALIANTS}
+            src="/stamp.png"
             alt="stamp"width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1206,7 +1519,8 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampfifa.png"
+          onClick={PDFFIFA}
+            src="/stamp.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1368,7 +1682,8 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampquiz.png"
+          onClick={PDFQUIZ}
+            src="/stamp.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
