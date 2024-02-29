@@ -10,10 +10,20 @@ import InsightCard from './InsightCard';
 import Footer from './Footer';
 import RoboCarousel from './RoboCarousel';
 import Gallery from './Gallery';
+import Navbar2 from './Navbar2';
+import Footer2 from './Footer2';
+import HackathonCarousel from './HackathonCarousel';
+import ExhibitionCarousel from  './ExhibitionCarousel';
+import ManagementCarousel from './ManagementCarousel';
+import GamingCarousel from './GamingCarousel';
+import OthersCarousel from  './OthersCarousel';
+import RoboticsCarousel from './RoboticsCarousel';
+
 
 
 export {
   Navbar,
+  Navbar2,
   TitleText,
   TypingText,
   StartSteps,
@@ -21,9 +31,16 @@ export {
   StartSteps2,
   NewFeatures,
   NewFeatures1,
+  HackathonCarousel,
+  ExhibitionCarousel,
+  ManagementCarousel,
+  RoboticsCarousel,
+  GamingCarousel,
+  OthersCarousel,
   ExploreCard,
   InsightCard,
   Footer,
+  Footer2,
   RoboCarousel,
   Gallery,
 };

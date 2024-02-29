@@ -1,7 +1,7 @@
 // ComingSoon.js
 'use client';
 
-import { Footer, Navbar} from '../components';
+import { Footer2, Navbar2} from '../components';
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
@@ -19,7 +19,7 @@ function Schedules() {
     
     <div className="bg-primary-black overflow-hidden">
         
-        <Navbar />
+        <Navbar2 />
         <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -39,7 +39,7 @@ function Schedules() {
         </motion.div>
       </div>
       <div className="gradient-04-1 z-0" />
-      <Footer/>
+      <Footer2/>
         
     </div>
    

@@ -6,19 +6,19 @@ import '../styles/globals.css';
 
 import Image from 'next/image';
 
-import {RoboCarousel} from '../components';
+import {RoboticsCarousel} from '../components';
 
 
-function Events() {
+function Robotics() {
   return (
     <div className="bg-primary-black overflow-hidden">
       
         <Navbar2 />
-        <RoboCarousel />
+        <RoboticsCarousel />
         <div className="" />
         <Footer2 />
     </div>
   )
 }
 
-export default Events;
+export default Robotics;

@@ -10,7 +10,7 @@ import {Collapse} from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 
-const Navbar = () => {
+const Navbar2 = () => {
   const [openNav, setOpenNav] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
   const handleScrollToGetStarted = () =>{
@@ -93,7 +93,7 @@ const handleWindowResize = () => {
 )
 };
 
-export default Navbar;
+export default Navbar2;
 
 
 

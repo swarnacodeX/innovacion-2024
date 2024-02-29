@@ -4,7 +4,7 @@ import React from 'react';
 
 import { motion } from 'framer-motion';
 import { TitleText, TypingText } from '../components';
-import { Footer, Navbar } from '../components';
+import { Footer, Navbar2 } from '../components';
 
 import styles from '../styles';
 import AboutCarousel from '../components/AboutCarousel';
@@ -14,7 +14,7 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 const AboutPage = () => {
   return (
   <div className="bg-primary-black overflow-hidden">
-    <Navbar />
+    <Navbar2 />
     <motion.div
       variants={staggerContainer}
       initial="hidden"

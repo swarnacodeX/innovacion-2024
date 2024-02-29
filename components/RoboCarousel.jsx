@@ -231,7 +231,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stamptracker.png"
             alt="stamp" width={0} height={0}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -285,7 +285,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stamprobospace.png"
             alt="stamp" width={900} height={550}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -339,7 +339,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stamphellinacell.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -393,7 +393,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampsciencemodel.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -450,7 +450,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampinnovare.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -504,7 +504,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampelectro.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -558,7 +558,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampaperture.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -611,7 +611,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stamppixelpioneer.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -665,7 +665,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampcyberthon.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -719,7 +719,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stamp360.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -773,7 +773,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampcodebreak.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -827,7 +827,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampcodesphere.png"
             alt="stamp" width={10} height={10}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -881,7 +881,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stamphackai.png"
             alt="stamp" width={10} height={10}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -935,7 +935,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampadmania.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -989,7 +989,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampeureka.png"
             alt="stamp"width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1044,7 +1044,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampbull.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1098,7 +1098,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png" 
+            src="/stampbgmi.png" 
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1152,7 +1152,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampvaliants.png"
             alt="stamp"width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1206,7 +1206,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampfifa.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1260,7 +1260,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampmath.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1314,7 +1314,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampiiiso.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1368,7 +1368,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/stampquiz.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />

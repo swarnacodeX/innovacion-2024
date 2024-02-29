@@ -1,7 +1,7 @@
 // ComingSoon.js
 
 
-import { Footer, Navbar} from '../components';
+import { Footer2, Navbar2} from '../components';
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
@@ -17,7 +17,7 @@ function Partners() {
     
     <div className="bg-primary-black overflow-hidden">
         
-        <Navbar />
+        <Navbar2 />
         <div className="flex justify-center items-center flex-col relative z-10">
         <motion.h2 variants={textVariant(1.1)} className={styles.heroHeading}>
           Coming Soon!
@@ -30,7 +30,7 @@ function Partners() {
         </motion.div>
       </div>
       <div className="gradient-04-1 z-0" />
-      <Footer/>
+      <Footer2/>
         
     </div>
    

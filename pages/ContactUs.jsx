@@ -2,7 +2,7 @@
 
 import React from 'react';
 import '../styles/ContactUs.module.css';
-import { Footer, Navbar} from '../components';
+import { Footer, Navbar2} from '../components';
 import Card from '../components/contactcard';
 import '../styles/globals.css';
 import { motion } from 'framer-motion';
@@ -12,7 +12,7 @@ import {staggerContainer } from '../utils/motion';
 
 const cardsData = [
   {
-    imageUrl: '#',
+    imageUrl: '/biswajit.png',
     title: 'Biswajit Das',
     description1: 'Graphics and Content Head, ',
     description2: 'PR & Outreach, Planning',
@@ -67,7 +67,7 @@ function ContactUs() {
   return (
     <div className="bg-primary-black overflow-hidden">
       
-        <Navbar />
+        <Navbar2 />
         <motion.div
       variants={staggerContainer}
       initial="hidden"
