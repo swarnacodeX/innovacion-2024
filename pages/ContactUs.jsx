@@ -12,8 +12,6 @@ import {staggerContainer } from '../utils/motion';
 
 const cardsData = [
   {
-<<<<<<< HEAD
-=======
     imageUrl: '/sayan.png',
     title: 'Sayan Dey',
     description1: 'Logistics & Procurement,',
@@ -28,7 +26,7 @@ const cardsData = [
       phoneNumber: '+917477542614',
     },
   {
->>>>>>> 5e17cad5b3597539e2024726cdb114dd76cae225
+
     imageUrl: '/biswajit.png',
     title: 'Biswajit Das',
     description1: 'Content Head, ',
