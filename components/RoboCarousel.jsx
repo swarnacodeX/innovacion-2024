@@ -533,7 +533,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamptracker.png"
+            src="/5.png"
             alt="stamp" width={0} height={0}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -588,7 +588,7 @@ const RoboCarousel = () => {
         >
           <Image
           
-            src="/stamprobospace.png"
+            src="/5.png"
             alt="stamp" width={900} height={550}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -643,7 +643,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFHELLINACELL}
-            src="/stamp.png"
+            src="/5.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -697,7 +697,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampsciencemodel.png"
+            src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -754,7 +754,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -808,7 +808,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -862,7 +862,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -916,7 +916,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFPIXEL}
-            src="/stamp.png"
+            src="/4.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -970,7 +970,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/4.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1024,7 +1024,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp360.png"
+            src="/4.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1079,7 +1079,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFCODEBREAK}
-            src="/stampcodebreak.png"
+            src="/4.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1134,7 +1134,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampcodesphere.png"
+            src="/4.png"
             alt="stamp" width={10} height={10}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1189,7 +1189,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFHACKAI}
-            src="/stamphackai.png"
+            src="/4.png"
             alt="stamp" width={10} height={10}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1244,7 +1244,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFADMNIA}
-            src="/stampadmania.png"
+            src="/2.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1299,7 +1299,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFEUREKA}
-            src="/stamp.png"
+            src="/2.png"
             alt="stamp"width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1344,7 +1344,7 @@ const RoboCarousel = () => {
         className="relative flex-1 flex justify-center items-center"
       >
         <Image
-          src="/TBM.jpg"
+          src="/2.jpg"
           alt="planet-09" width={155} height={155}
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
@@ -1410,7 +1410,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFBGMI}
-            src="/stamp.png" 
+            src="/1.png" 
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1465,7 +1465,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFVALIANTS}
-            src="/stamp.png"
+            src="/1.png"
             alt="stamp"width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1520,7 +1520,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFFIFA}
-            src="/stamp.png"
+            src="/1.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1574,7 +1574,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampmath.png"
+            src="/3.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1628,7 +1628,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampiiiso.png"
+            src="/3.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -1683,7 +1683,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFQUIZ}
-            src="/stamp.png"
+            src="/3.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />

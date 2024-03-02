@@ -3,11 +3,13 @@ export const exploreWorlds = [
     id: 'world-1',
     imgUrl: '/39444.jpg',
     title: 'Robotics',
+    link:'/Robotics',
   },
   {
     id: 'world-2',
     imgUrl: '/futuristic-football-soccer-player-with-glowing-lights.jpg',
     title: 'Gaming',
+    link:'/Gaming'
   },
   {
     id: 'world-3',

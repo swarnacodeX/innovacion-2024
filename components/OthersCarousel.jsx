@@ -116,7 +116,7 @@ const OthersCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampmath.png"
+            src="/3.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -170,7 +170,7 @@ const OthersCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampiiiso.png"
+            src="/3.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -224,7 +224,7 @@ const OthersCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampquiz.png"
+            src="/3.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />

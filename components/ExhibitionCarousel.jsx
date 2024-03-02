@@ -122,7 +122,7 @@ const ExhibitionCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -179,7 +179,7 @@ const ExhibitionCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -233,7 +233,7 @@ const ExhibitionCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -287,7 +287,7 @@ const ExhibitionCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />

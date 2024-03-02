@@ -116,7 +116,7 @@ const GamingCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampbgmi.png" 
+            src="/1.png" 
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -170,7 +170,7 @@ const GamingCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampvaliants.png"
+            src="/1.png"
             alt="stamp"width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -224,7 +224,7 @@ const GamingCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampfifa.png"
+            src="/1.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />

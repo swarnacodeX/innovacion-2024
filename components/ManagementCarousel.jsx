@@ -116,7 +116,7 @@ const ManagementCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/2.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -170,7 +170,7 @@ const ManagementCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/2.png"
             alt="stamp"width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -225,7 +225,7 @@ const ManagementCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp.png"
+            src="/2.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />

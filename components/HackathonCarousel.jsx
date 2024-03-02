@@ -132,7 +132,7 @@ const HackathonCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamppixelpioneer.png"
+            src="/4.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -186,7 +186,7 @@ const HackathonCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampcyberthon.png"
+            src="/4.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -240,7 +240,7 @@ const HackathonCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamp360.png"
+            src="/4.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -294,7 +294,7 @@ const HackathonCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampcodebreak.png"
+            src="/4.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -348,7 +348,7 @@ const HackathonCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stampcodesphere.png"
+            src="/4.png"
             alt="stamp" width={10} height={10}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -402,7 +402,7 @@ const HackathonCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamphackai.png"
+            src="/4.png"
             alt="stamp" width={10} height={10}
             className="w-[155px] h-[155px] object-contain"
           />

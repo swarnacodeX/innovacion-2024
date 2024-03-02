@@ -116,7 +116,7 @@ const RoboticsCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamptracker.png"
+            src="/5.png"
             alt="stamp" width={0} height={0}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -170,7 +170,7 @@ const RoboticsCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamprobospace.png"
+            src="/5.png"
             alt="stamp" width={900} height={550}
             className="w-[155px] h-[155px] object-contain"
           />
@@ -224,7 +224,7 @@ const RoboticsCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-            src="/stamphellinacell.png"
+            src="/5.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
