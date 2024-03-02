@@ -1344,7 +1344,7 @@ const RoboCarousel = () => {
         className="relative flex-1 flex justify-center items-center"
       >
         <Image
-          src="/2.jpg"
+          src="/tbm.jpg"
           alt="planet-09" width={155} height={155}
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
@@ -1355,7 +1355,7 @@ const RoboCarousel = () => {
         >
           <Image
           onClick={PDFBULL}
-            src="/stamp.png"
+            src="/2.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
           />
