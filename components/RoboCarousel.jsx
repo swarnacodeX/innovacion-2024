@@ -318,7 +318,31 @@ const RoboCarousel = () => {
       setLoading(false);
     }
   };
+  const PDFINNOVARE = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/INNOVARE and SCIENCE Model Exhibition.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
 
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'Innovare and Science model exhibition rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     
 <div
@@ -534,9 +558,23 @@ const RoboCarousel = () => {
         >
           <Image
             src="/5.png"
-            alt="stamp" width={0} height={0}
+            alt="stamp" width={155}
+            height={155}
             className="w-[155px] h-[155px] object-contain"
           />
+         
+        </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+            src="/5.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+         
         </motion.div>
       </motion.div>
      </motion.div> 
@@ -593,6 +631,16 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+            src="/5.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          /></motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -648,6 +696,18 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFHELLINACELL}
+            src="/5.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+          </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -697,11 +757,24 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFINNOVARE}
             src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+           onClick={PDFINNOVARE}
+            src="/6.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -744,6 +817,7 @@ const RoboCarousel = () => {
         className="relative flex-1 flex justify-center items-center"
       >
         <Image
+        
           src="/innovare.jpg"
           alt="planet-09" width={155} height={155}
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
@@ -754,11 +828,24 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+           onClick={PDFINNOVARE}
             src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+           onClick={PDFINNOVARE}
+            src="/6.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+          </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -813,6 +900,17 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+            src="/6.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -867,6 +965,17 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+            src="/6.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -912,7 +1021,7 @@ const RoboCarousel = () => {
 
         <motion.div
           variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
+          className="lg:block hidden  absolute -left-[10%] top-[3%]"
         >
           <Image
           onClick={PDFPIXEL}
@@ -921,6 +1030,18 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFPIXEL}
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -975,6 +1096,17 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1028,7 +1160,19 @@ const RoboCarousel = () => {
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
+          
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1082,7 +1226,19 @@ const RoboCarousel = () => {
             src="/4.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
+          /></motion.div>
+           <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-30%]"
+        >
+          <Image
+          onClick={PDFCODEBREAK}
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
           />
+      
         </motion.div>
       </motion.div>
      </motion.div> 
@@ -1134,11 +1290,24 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+           onClick={PDFCODESPHERE}
             src="/4.png"
             alt="stamp" width={10} height={10}
             className="w-[155px] h-[155px] object-contain"
           />
+          
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1193,7 +1362,20 @@ const RoboCarousel = () => {
             alt="stamp" width={10} height={10}
             className="w-[155px] h-[155px] object-contain"
           />
+
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-35%]"
+        >
+          <Image
+          onClick={PDFHACKAI}
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1249,6 +1431,18 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFADMNIA}
+            src="/2.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1304,6 +1498,18 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+           onClick={PDFEUREKA}
+            src="/2.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1360,6 +1566,18 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFBULL}
+            src="/2.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1415,6 +1633,18 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+           onClick={PDFBGMI}
+            src="/1.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1470,6 +1700,18 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFVALIANTS}
+            src="/1.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1525,6 +1767,18 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFFIFA}
+            src="/1.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1579,6 +1833,17 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+            src="/3.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1633,6 +1898,17 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+            src="/3.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -1688,6 +1964,18 @@ const RoboCarousel = () => {
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFQUIZ}
+            src="/3.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
