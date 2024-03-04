@@ -1556,7 +1556,7 @@ const RoboCarousel = () => {
         <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block absolute -left-[-55%] top-[-40%]"
-        ><a href={admania} download="Admania Rulebook">
+        ><a href={admania} download="Admania Rulebook.pdf">
           <Image
           
             src="/2.png"
@@ -1758,7 +1758,7 @@ const RoboCarousel = () => {
         <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block absolute -left-[-55%] top-[-40%]"
-        ><a href={bgmi} download="Bgmi Rulebook">
+        ><a href={bgmi} download="Bgmi Rulebook.pdf">
           <Image
           
             src="/1.png"
