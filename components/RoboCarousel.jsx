@@ -42,7 +42,7 @@ const RoboCarousel = () => {
     } catch (error) {
       console.error('Error downloading PDF:', error);
     } finally {
-      setLoading();
+      setLoading(false);
     }
   };
   const PDFMATH = async () => {
@@ -67,7 +67,7 @@ const RoboCarousel = () => {
     } catch (error) {
       console.error('Error downloading PDF:', error);
     } finally {
-      setLoading();
+      setLoading(false);
     }
   };
   const PDFBGMI = async () => {
@@ -92,7 +92,7 @@ const RoboCarousel = () => {
     } catch (error) {
       console.error('Error downloading PDF:', error);
     } finally {
-      setLoading();
+      setLoading(false);
     }
   };
   const PDFCODEBREAK = async () => {
