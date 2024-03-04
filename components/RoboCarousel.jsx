@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import styles from '../styles';
 import Image from 'next/image';
 import { TitleText } from '.';
+import Link from 'next/link';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 import admania from  '../public/rulebook/ADMANIA RuleBook.pdf';
 import bgmi from '../public/rulebook/BGMI RuleBook.pdf';
@@ -673,27 +674,27 @@ const RoboCarousel = () => {
         <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
-        >
+        ><Link href="/TRACKER RuleBook.pdf">
           <Image
-          onClick={PDFTRACKER}
+         
             src="/5.png"
             alt="stamp" width={155}
             height={155}
             className="w-[155px] h-[155px] object-contain"
-          />
+          /></Link>
          
         </motion.div>
         <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block absolute -left-[-55%] top-[-40%]"
-        >
+        ><Link href="/TRACKER RuleBook.pdf">
           <Image
-          onClick={PDFTRACKER}
+          
             src="/5.png"
             alt="stamp" width={155}
             height={155}
             className="w-[155px] h-[155px] object-contain"
-          />
+          /></Link>
          
         </motion.div>
       </motion.div>
@@ -743,13 +744,13 @@ const RoboCarousel = () => {
         <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
-        >
+        ><Link href="ROBOPACE Rule book.pdf">
           <Image
-          onClick={PDFROBO}
+          
             src="/5.png"
             alt="stamp" width={900} height={550}
             className="w-[155px] h-[155px] object-contain"
-          />
+          /></Link>
         </motion.div>
         <motion.div
           variants={zoomIn(0.4, 1)}
