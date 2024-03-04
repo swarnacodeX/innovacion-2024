@@ -212,7 +212,7 @@ const PDFHELLINACELL = async () => {
   try {
       setLoading(true);
       // Fetch the PDF file from the server or external source
-      const response = await fetch('/rulebook/EUREKA RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const response = await fetch('/rulebook/HELL IN A CELL RuleBook.pdf'); // Replace with the actual path to your PDF file
       const blob = await response.blob();
 
       // Create a temporary link element
@@ -222,7 +222,7 @@ const PDFHELLINACELL = async () => {
       // Set the href attribute to the Blob object representing the PDF file
       link.href = url;
       // Set the download attribute to specify the filename
-      link.download = 'EUREKA-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      link.download = 'HELL IN A CELL-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
 
       // Append the link to the document body
       document.body.appendChild(link);
