@@ -58,7 +58,7 @@ const handleWindowResize = () => {
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/GalleryPage'>Gallery</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/Partners'>Partners</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/ContactUs'>Contact  Us</Link>
-      <button onClick={handleScrollToGetStarted}className='registerbutton1'>Register</button>
+      <Link href="/#regis"><button   className='registerbutton1'>Register</button></Link>
       </div>
       <Image
   src="/innovacion2k24-logo.png"
@@ -86,7 +86,7 @@ const handleWindowResize = () => {
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/GalleryPage'>Gallery</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/Partners'>Partners</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/ContactUs'>Contact  Us</Link>
-      <a href="/#regis"><button   onClick={handleScrollToGetStarted} className='registerbutton1'>Register</button></a>
+      <Link href="/#regis"><button    className='registerbutton1'>Register</button></Link>
       </div>
       </div>
   </motion.nav>

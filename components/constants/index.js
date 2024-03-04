@@ -20,16 +20,19 @@ export const exploreWorlds = [
     id: 'world-4',
     imgUrl: '/1_J2AY2_KqWSFA-pEcbz2k9Q.png',
     title: 'Hackathons',
+    link:'/Hackathons'
   },
   {
     id: 'world-5',
     imgUrl: '/AdobeStock_557955842.jpeg',
     title: 'Management',
+    link:'/Management'
   },
   {
     id: 'world-6',
     imgUrl: '/others.jpg',
     title: 'Others',
+    link:'/Others'
   },
 ];
 

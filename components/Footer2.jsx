@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { socials } from './constants';
 import Image from 'next/image';
 import styles from '../styles';
+import  Link from 'next/link';
 import { footerVariants } from '../utils/motion';
 
 
@@ -30,8 +31,10 @@ const Footer2 = () => {
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
           Enter the Metaverse
         </h4>
-        <div><button href="#regis" onClick={handleScrollToGetStarted} className='registerbutton1 rounded-[32px] gap-[12px]'>Register</button></div>
-      </div>
+        <div>
+          <Link href="/#regis"><button href="#regis" onClick={handleScrollToGetStarted} className='registerbutton1 rounded-[32px] gap-[12px]'>Register</button>
+          </Link>
+          </div></div>
 
       <div className="flex flex-col">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />

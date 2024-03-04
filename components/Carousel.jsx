@@ -15,7 +15,7 @@ const Carousel = () => {
   return (
     <div
       id="carouselExampleControls"
-      className="relative"
+      className="relative w-full"
       data-te-carousel-init
       data-te-ride="carousel">
 
@@ -23,158 +23,159 @@ const Carousel = () => {
         className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
   
         <div
-          className="relative float-start -mr-[100%] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-start -mr-[100%] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item
           data-te-carousel-active>
           <Image
             src="/asd/08.jpg"
-            className="block w-auto"
-            alt="Wild Landscape"  width={900} height={500}
-            objectFit="cover" />
-        </div>
-
-        <div
-          className="relative float-start -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-item>
-          <Image
-            src="/asd/46.jpg"
-            className="block w-full"
-            alt="Camera"  width={900} height={505} />
-        </div>
-
-        <div
-          className="relative float-start -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-item>
-          <Image
-            src="/asd/29.jpg"
-            className="block w-full"
-            alt="Exotic Fruits"  width={900} height={505} />
-        </div>
-
-        <div
-          className="relative float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-          data-te-carousel-item>
-          <Image
-            src="/asd/02.jpg"
-            className="block w-full"
+            className="block w-full object-contain"
             alt="Camera"   width={805} height={505}/>
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-start -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <Image
+            src="/asd/46.jpg"
+            className="block w-full object-contain"
+            alt="Camera"   width={805} height={505} />
+        </div>
+
+        <div
+          className="relative w-full h-full float-start -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <Image
+            src="/asd/29.jpg"
+            className="block w-full object-contain"
+            alt="Camera"   width={805} height={505} />
+        </div>
+
+        <div
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item>
+          <Image
+            src="/asd/02.jpg"
+            className="block w-full object-contain"
+            alt="Camera"   width={805} height={505} />
+        </div>
+
+        <div
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/48.jpg"
-            className="block w-full"
-            alt="Camera"   width={900} height={505}/>
+            className="block w-full object-contain"
+            alt="Camera"   width={805} height={505}/>
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-3/4 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+        className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/36.jpg"
-            className="block w-full"
-            alt="Camera"  width={900} height={505} />
+            className="block w-full object-contain"
+            alt="Camera"   width={805} height={505} />
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-3/4 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/25.jpg"
-            className="block w-full"
-            alt="Camera"  width={805} height={505} />
+            className="block w-full object-contain"
+            alt="Camera"   width={805} height={505}/>
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-3/4 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/15.jpg"
-            className="block w-full"
-            alt="Camera"  width={805} height={505} />
+            className="block w-full object-contain"
+            alt="Camera"  
+            layout="fill"
+            objectFit="cover" />
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-3/4 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/24.jpg"
-            className="block w-full"
+            className="block w-full object-contain"
             alt="Camera"  width={805} height={505} />
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-3/4 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/47.jpg"
-            className="block w-full"
+            className="block w-full object-contain"
             alt="Camera"   width={900} height={505}/>
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-3/4 transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/49.jpg"
-            className="block w-full"
+            className="block w-full object-contain"
             alt="Camera"  width={805} height={505} />
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-3/4  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden   transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/42.jpg"
-            className="block w-full"
+            className="block w-full object-contain"
             alt="Camera"  width={805} height={505} />
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/43.jpg"
-            className="block w-full"
+            className="block w-full object-contain"
             alt="Camera"  width={805} height={505}/>
             
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/16.jpg"
-            className="block w-full"
+            className="block w-full object-contain"
             alt="Camera"   width={805} height={505}/>
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/11.jpg"
-            className="block w-full"
+            className="block w-full object-contain"
             alt="Camera"   width={805} height={505}/>
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/32.jpg"
-            className="block w-full"
+            className="block w-full object-contain"
             alt="Camera"   width={805} height={505}/>
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative w-full h-full float-left -mr-[100%] hidden  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
           data-te-carousel-item>
           <Image
             src="/asd/34.jpg"
-            className="block w-full"
+            className="block w-full object-contain"
             alt="Camera"   width={805} height={505}/>
         </div>
       

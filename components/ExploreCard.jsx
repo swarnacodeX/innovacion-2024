@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { fadeIn } from '../utils/motion';
 
 const ExploreCard = ({ id, imgUrl, title, link, index, active, handleClick }) => (
+  <Link href={link || '/'}>
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
@@ -43,6 +44,7 @@ const ExploreCard = ({ id, imgUrl, title, link, index, active, handleClick }) =>
       </div>
     )}
   </motion.div>
+  </Link>
 );
 
 export default ExploreCard;
