@@ -115,159 +115,196 @@ const RoboCarousel = () => {
     } catch (error) {
       console.error('Error downloading PDF:', error);
     } finally {
-      setLoading();
+      setLoading(false);
     }
   };
   const PDFEUREKA = async () => {
-    setLoading(true);
     try {
-      // Fetch the PDF file from the server or external source
-      const response = await fetch('/rulebook/EUREKA RuleBook.pdf'); // Replace with the actual path to your PDF file
-      const blob = await response.blob();
+        setLoading(true);
+        // Fetch the PDF file from the server or external source
+        const response = await fetch('/rulebook/EUREKA RuleBook.pdf'); // Replace with the actual path to your PDF file
+        const blob = await response.blob();
 
-      // Create a temporary link element
-      const link = document.createElement('a');
-      // Set the href attribute to the Blob object representing the PDF file
-      link.href = window.URL.createObjectURL(new Blob([blob]));
-      // Set the download attribute to specify the filename
-      link.download = 'EUREKA-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
-      // Append the link to the document body
-      document.body.appendChild(link);
-      // Programmatically trigger the click event on the link
-      link.click();
-      // Remove the link from the document body
-      document.body.removeChild(link);
+        // Create a temporary link element
+        const link = document.createElement('a');
+        const url = window.URL.createObjectURL(blob);
+
+        // Set the href attribute to the Blob object representing the PDF file
+        link.href = url;
+        // Set the download attribute to specify the filename
+        link.download = 'EUREKA-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+
+        // Append the link to the document body
+        document.body.appendChild(link);
+
+        // Programmatically trigger the click event on the link
+        link.click();
+
+        // Cleanup
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
     } catch (error) {
-      console.error('Error downloading PDF:', error);
+        console.error('Error downloading PDF:', error);
     } finally {
-      setLoading();
+        setLoading(false);
     }
-  };
-  const PDFFIFA = async () => {
-    setLoading(true);
-    try {
+};
+
+const PDFFIFA = async () => {
+  try {
+      setLoading(true);
       // Fetch the PDF file from the server or external source
       const response = await fetch('/rulebook/FIFA RuleBook.pdf'); // Replace with the actual path to your PDF file
       const blob = await response.blob();
 
       // Create a temporary link element
       const link = document.createElement('a');
+      const url = window.URL.createObjectURL(blob);
+
       // Set the href attribute to the Blob object representing the PDF file
-      link.href = window.URL.createObjectURL(new Blob([blob]));
+      link.href = url;
       // Set the download attribute to specify the filename
       link.download = 'FIFA-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+
       // Append the link to the document body
       document.body.appendChild(link);
+
       // Programmatically trigger the click event on the link
       link.click();
-      // Remove the link from the document body
+
+      // Cleanup
       document.body.removeChild(link);
-    } catch (error) {
+      window.URL.revokeObjectURL(url);
+  } catch (error) {
       console.error('Error downloading PDF:', error);
-    } finally {
+  } finally {
       setLoading(false);
-    }
-  };
-  const PDFHELLINACELL = async () => {
-    setLoading(true);
-    try {
+  }
+};
+const PDFHELLINACELL = async () => {
+  try {
+      setLoading(true);
       // Fetch the PDF file from the server or external source
-      const response = await fetch('/rulebook/HELL IN A CELL Rulebook.pdf'); // Replace with the actual path to your PDF file
+      const response = await fetch('/rulebook/EUREKA RuleBook.pdf'); // Replace with the actual path to your PDF file
       const blob = await response.blob();
 
       // Create a temporary link element
       const link = document.createElement('a');
+      const url = window.URL.createObjectURL(blob);
+
       // Set the href attribute to the Blob object representing the PDF file
-      link.href = window.URL.createObjectURL(new Blob([blob]));
+      link.href = url;
       // Set the download attribute to specify the filename
-      link.download = 'HELLINACELL-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      link.download = 'EUREKA-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+
       // Append the link to the document body
       document.body.appendChild(link);
+
       // Programmatically trigger the click event on the link
       link.click();
-      // Remove the link from the document body
+
+      // Cleanup
       document.body.removeChild(link);
-    } catch (error) {
+      window.URL.revokeObjectURL(url);
+  } catch (error) {
       console.error('Error downloading PDF:', error);
-    } finally {
+  } finally {
       setLoading(false);
-    }
-  };
-  const PDFPIXEL = async () => {
-    setLoading(true);
-    try {
+  }
+};
+const PDFPIXEL = async () => {
+  try {
+      setLoading(true);
       // Fetch the PDF file from the server or external source
       const response = await fetch('/rulebook/PIXEL PIONEER RuleBook.pdf'); // Replace with the actual path to your PDF file
       const blob = await response.blob();
 
       // Create a temporary link element
       const link = document.createElement('a');
+      const url = window.URL.createObjectURL(blob);
+
       // Set the href attribute to the Blob object representing the PDF file
-      link.href = window.URL.createObjectURL(new Blob([blob]));
+      link.href = url;
       // Set the download attribute to specify the filename
       link.download = 'PIXELPIONEER-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+
       // Append the link to the document body
       document.body.appendChild(link);
+
       // Programmatically trigger the click event on the link
       link.click();
-      // Remove the link from the document body
+
+      // Cleanup
       document.body.removeChild(link);
-    } catch (error) {
+      window.URL.revokeObjectURL(url);
+  } catch (error) {
       console.error('Error downloading PDF:', error);
-    } finally {
+  } finally {
       setLoading(false);
-    }
-  };
-  const PDFQUIZ = async () => {
-    setLoading(true);
-    try {
+  }
+};
+const PDFQUIZ = async () => {
+  try {
+      setLoading(true);
       // Fetch the PDF file from the server or external source
       const response = await fetch('/rulebook/QUIZ CRUSADE RuleBook.pdf'); // Replace with the actual path to your PDF file
       const blob = await response.blob();
 
       // Create a temporary link element
       const link = document.createElement('a');
+      const url = window.URL.createObjectURL(blob);
+
       // Set the href attribute to the Blob object representing the PDF file
-      link.href = window.URL.createObjectURL(new Blob([blob]));
+      link.href = url;
       // Set the download attribute to specify the filename
       link.download = 'QUIZ CRUSADE-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+
       // Append the link to the document body
       document.body.appendChild(link);
+
       // Programmatically trigger the click event on the link
       link.click();
-      // Remove the link from the document body
+
+      // Cleanup
       document.body.removeChild(link);
-    } catch (error) {
+      window.URL.revokeObjectURL(url);
+  } catch (error) {
       console.error('Error downloading PDF:', error);
-    } finally {
+  } finally {
       setLoading(false);
-    }
-  };
-  const PDFBULL = async () => {
-    setLoading(true);
-    try {
+  }
+};
+const PDFBULL = async () => {
+  try {
+      setLoading(true);
       // Fetch the PDF file from the server or external source
       const response = await fetch('/rulebook/THE BULL MASTER RuleBook.pdf'); // Replace with the actual path to your PDF file
       const blob = await response.blob();
 
       // Create a temporary link element
       const link = document.createElement('a');
+      const url = window.URL.createObjectURL(blob);
+
       // Set the href attribute to the Blob object representing the PDF file
-      link.href = window.URL.createObjectURL(new Blob([blob]));
+      link.href = url;
       // Set the download attribute to specify the filename
-      link.download = 'TBM-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      link.download = 'THE-BULL-MASTER-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+
       // Append the link to the document body
       document.body.appendChild(link);
+
       // Programmatically trigger the click event on the link
       link.click();
-      // Remove the link from the document body
+
+      // Cleanup
       document.body.removeChild(link);
-    } catch (error) {
+      window.URL.revokeObjectURL(url);
+  } catch (error) {
       console.error('Error downloading PDF:', error);
-    } finally {
+  } finally {
       setLoading(false);
-    }
-  };
+  }
+};
   const PDFVALIANTS = async () => {
     setLoading(true);
     try {
