@@ -40,7 +40,7 @@ const RoboCarousel = () => {
     } catch (error) {
       console.error('Error downloading PDF:', error);
     } finally {
-      setLoading(false);
+      setLoading();
     }
   };
   const PDFBGMI = async () => {
@@ -65,7 +65,7 @@ const RoboCarousel = () => {
     } catch (error) {
       console.error('Error downloading PDF:', error);
     } finally {
-      setLoading(false);
+      setLoading();
     }
   };
   const PDFCODEBREAK = async () => {
@@ -90,7 +90,7 @@ const RoboCarousel = () => {
     } catch (error) {
       console.error('Error downloading PDF:', error);
     } finally {
-      setLoading(false);
+      setLoading();
     }
   };
   const PDFCODESPHERE = async () => {
@@ -115,7 +115,7 @@ const RoboCarousel = () => {
     } catch (error) {
       console.error('Error downloading PDF:', error);
     } finally {
-      setLoading(false);
+      setLoading();
     }
   };
   const PDFEUREKA = async () => {
@@ -140,7 +140,7 @@ const RoboCarousel = () => {
     } catch (error) {
       console.error('Error downloading PDF:', error);
     } finally {
-      setLoading(false);
+      setLoading();
     }
   };
   const PDFFIFA = async () => {
@@ -272,7 +272,7 @@ const RoboCarousel = () => {
     setLoading(true);
     try {
       // Fetch the PDF file from the server or external source
-      const response = await fetch('/rulebook/VALIANTS RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const response = await fetch('public/rulebook/VALIANTS RuleBook.pdf'); // Replace with the actual path to your PDF file
       const blob = await response.blob();
 
       // Create a temporary link element
@@ -297,7 +297,7 @@ const RoboCarousel = () => {
     setLoading(true);
     try {
       // Fetch the PDF file from the server or external source
-      const response = await fetch('/rulebook/HACK-AI RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const response = await fetch('/rulebook/HACK-AI RuleBook 1.pdf'); // Replace with the actual path to your PDF file
       const blob = await response.blob();
 
       // Create a temporary link element
