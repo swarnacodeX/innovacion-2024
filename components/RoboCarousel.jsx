@@ -172,7 +172,7 @@ const RoboCarousel = () => {
     setLoading(true);
     try {
       // Fetch the PDF file from the server or external source
-      const response = await fetch('/rulebook/HELL IN A CELL RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const response = await fetch('/rulebook/HELL IN A CELL Rulebook.pdf'); // Replace with the actual path to your PDF file
       const blob = await response.blob();
 
       // Create a temporary link element
@@ -306,6 +306,31 @@ const RoboCarousel = () => {
       link.href = window.URL.createObjectURL(new Blob([blob]));
       // Set the download attribute to specify the filename
       link.download = 'HACK-AI-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFROBO = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/ROBOPACE Rule book.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'ROBOPACE rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
       // Append the link to the document body
       document.body.appendChild(link);
       // Programmatically trigger the click event on the link
@@ -625,7 +650,7 @@ const RoboCarousel = () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
-          
+          onClick={PDFROBO}
             src="/5.png"
             alt="stamp" width={900} height={550}
             className="w-[155px] h-[155px] object-contain"
