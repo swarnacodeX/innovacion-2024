@@ -810,20 +810,20 @@ const RoboCarousel = () => {
         <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
-        >
+        ><Link href="/HELL IN A CELL Rulebook.pdf">
           <Image
-          onClick={PDFHELLINACELL}
+          
             src="/5.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
-          />
+          /></Link>
         </motion.div>
         <motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block absolute -left-[-55%] top-[-40%]"
         >
           <Image
-          onClick={PDFHELLINACELL}
+          
             src="/5.png"
             alt="stamp" width={155}
             height={155}
