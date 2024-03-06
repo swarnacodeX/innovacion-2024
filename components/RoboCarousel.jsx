@@ -268,6 +268,31 @@ const PDFHELLINACELL = async () => {
       setLoading(false);
   }
 };
+const PDFIIISO = async () => {
+  setLoading(true);
+  try {
+    // Fetch the PDF file from the server or external source
+    const response = await fetch('/rulebook/IIISO RuleBook.pdf'); // Replace with the actual path to your PDF file
+    const blob = await response.blob();
+
+    // Create a temporary link element
+    const link = document.createElement('a');
+    // Set the href attribute to the Blob object representing the PDF file
+    link.href = window.URL.createObjectURL(new Blob([blob]));
+    // Set the download attribute to specify the filename
+    link.download = 'IIISO Rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+    // Append the link to the document body
+    document.body.appendChild(link);
+    // Programmatically trigger the click event on the link
+    link.click();
+    // Remove the link from the document body
+    document.body.removeChild(link);
+  } catch (error) {
+    console.error('Error downloading PDF:', error);
+  } finally {
+    setLoading(false);
+  }
+};
 const PDFPIXEL = async () => {
   try {
       setLoading(true);
@@ -499,6 +524,56 @@ const PDFBULL = async () => {
       link.href = window.URL.createObjectURL(new Blob([blob]));
       // Set the download attribute to specify the filename
       link.download = '360codecraft rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFAPERTURE = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/APERTURE RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'APERTURE Rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFELECTROSLIDES = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/ELECTROSLIDES RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'ELECTROSLIDES Rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
       // Append the link to the document body
       document.body.appendChild(link);
       // Programmatically trigger the click event on the link
@@ -1067,6 +1142,7 @@ const PDFBULL = async () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFELECTROSLIDES}
             src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
@@ -1077,6 +1153,7 @@ const PDFBULL = async () => {
           className="lg:block absolute -left-[-55%] top-[-40%]"
         >
           <Image
+          onClick={PDFELECTROSLIDES}
             src="/6.png"
             alt="stamp" width={155}
             height={155}
@@ -1132,6 +1209,7 @@ const PDFBULL = async () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFAPERTURE}
             src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
@@ -1142,6 +1220,7 @@ const PDFBULL = async () => {
           className="lg:block absolute -left-[-55%] top-[-40%]"
         >
           <Image
+          onClick={PDFAPERTURE}
             src="/6.png"
             alt="stamp" width={155}
             height={155}
@@ -2070,6 +2149,7 @@ const PDFBULL = async () => {
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFIIISO}
             src="/3.png"
             alt="stamp" width={15} height={15}
             className="w-[155px] h-[155px] object-contain"
@@ -2080,6 +2160,7 @@ const PDFBULL = async () => {
           className="lg:block absolute -left-[-55%] top-[-40%]"
         >
           <Image
+          onClick={PDFIIISO}
             src="/3.png"
             alt="stamp" width={155}
             height={155}
