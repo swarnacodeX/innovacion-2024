@@ -15,7 +15,6 @@ const PartnersImages = [
   { src: "../partnerlogo/otherlogos/5.png", alt: 'Image 3' },
   { src: "../partnerlogo/otherlogos/6.png", alt: 'Image 3' },
   { src: "../partnerlogo/otherlogos/7.png", alt: 'Image 3' },
-  { src: "../partnerlogo/otherlogos/8.png", alt: 'Image 3' },
   { src: "../partnerlogo/otherlogos/HAQUE ELECTRONICS.png", alt: 'Image 3' },
   { src: "../partnerlogo/otherlogos/9.png", alt: 'Image 3' },
   { src: "../partnerlogo/otherlogos/10.png", alt: 'Image 3' },
