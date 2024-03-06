@@ -50,7 +50,7 @@ const PartnersPageImages = ({images}) =>{
       <Footer2/>
         
     </div>
-   
+
   );
 };
 
