@@ -2,7 +2,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from '../styles';
 import Image from 'next/image';
 import { TitleText } from '.';
@@ -16,6 +16,163 @@ const HackathonCarousel = () => {
     };
     init();
   }, []);
+  const [loading, setLoading] = useState(false);
+  const PDFCYBER = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/ADMANIA RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'admania-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDF360 = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/360 CODECRAFT Rulebook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = '360codecraft rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFHACKAI = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/HACK-AI RuleBook 1.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'HACK-AI-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFPIXEL = async () => {
+    try {
+        setLoading(true);
+        // Fetch the PDF file from the server or external source
+        const response = await fetch('/rulebook/PIXEL PIONEER RuleBook.pdf'); // Replace with the actual path to your PDF file
+        const blob = await response.blob();
+  
+        // Create a temporary link element
+        const link = document.createElement('a');
+        const url = window.URL.createObjectURL(blob);
+  
+        // Set the href attribute to the Blob object representing the PDF file
+        link.href = url;
+        // Set the download attribute to specify the filename
+        link.download = 'PIXELPIONEER-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+  
+        // Append the link to the document body
+        document.body.appendChild(link);
+  
+        // Programmatically trigger the click event on the link
+        link.click();
+  
+        // Cleanup
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+    } catch (error) {
+        console.error('Error downloading PDF:', error);
+    } finally {
+        setLoading(false);
+    }
+  };
+  const PDFCODEBREAK = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/CODEBREAK ODYSSEY RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'CODEBREAK-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading();
+    }
+  };
+  const PDFCODESPHERE = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/CODESPHERE RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'CODESPHERE-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     
@@ -127,16 +284,29 @@ const HackathonCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
+          className="lg:block hidden  absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFPIXEL}
             src="/4.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFPIXEL}
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -181,16 +351,29 @@ const HackathonCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
+          className="lg:block hidden  absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFCYBER}
             src="/4.png"
-            alt="stamp" width={15} height={15}
+            alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFCYBER}
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -235,16 +418,29 @@ const HackathonCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
+          className="lg:block hidden  absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDF360}
             src="/4.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDF360}
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -289,16 +485,29 @@ const HackathonCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
+          className="lg:block hidden  absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFCODEBREAK}
             src="/4.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFCODEBREAK}
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -343,16 +552,29 @@ const HackathonCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
+          className="lg:block hidden  absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFCODESPHERE}
             src="/4.png"
-            alt="stamp" width={10} height={10}
+            alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFCODESPHERE}
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -397,16 +619,29 @@ const HackathonCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
+          className="lg:block hidden  absolute -left-[10%] top-[3%]"
         >
           <Image
+          onClick={PDFHACKAI}
             src="/4.png"
-            alt="stamp" width={10} height={10}
+            alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFHACKAI}
+            src="/4.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+      </motion.div>
       </motion.div>
      </motion.div> 
     </div>

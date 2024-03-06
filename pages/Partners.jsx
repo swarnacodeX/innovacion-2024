@@ -1,39 +1,34 @@
-// ComingSoon.js
+// pages/gallery.js
+'use client';
 
+import {PartnersPageImages} from '../components';
 
-import { Footer2, Navbar2} from '../components';
-import styles from '../styles';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+const PartnersImages = [
+  { src:"../partnerlogo/genericlogos/2.png", alt: 'Image 1' },
+  { src: "../partnerlogo/genericlogos/3.png", alt: 'Image 2' },
+  { src: "../partnerlogo/genericlogos/4.png", alt: 'Image 3' },
+  { src: "../partnerlogo/genericlogos/5.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/1.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/2.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/3.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/4.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/5.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/6.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/7.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/8.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/9.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/10.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/11.png", alt: 'Image 3' },
+  { src: "../partnerlogo/otherlogos/12.png", alt: 'Image 3' },
+];
 
-import { motion } from 'framer-motion';
-
-import React from 'react'
-import '../styles/globals.css';
-
-import Image from 'next/image';
-
-function Partners() {
+const Partners = () => {
   return (
     
-    <div className="bg-primary-black overflow-hidden">
-        
-        <Navbar2 />
-        <div className="flex justify-center items-center flex-col relative z-10">
-        <motion.h2 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Coming Soon!
-        </motion.h2>
-        <motion.div
-          variants={textVariant(1.2)}
-          className="flex flex-row justify-center items-center"
-        >
-          <h1 className={styles.heroHeading}></h1>
-        </motion.div>
-      </div>
-      <div className="gradient-04-1 z-0" />
-      <Footer2/>
-        
+    <div className="max-w-screen-lg mx-auto">
+      
+      <PartnersPageImages  images={PartnersImages}  />
     </div>
-   
   );
 };
 

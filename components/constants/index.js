@@ -15,6 +15,7 @@ export const exploreWorlds = [
     id: 'world-3',
     imgUrl: '/man-wearing-vr-glasses-gaming.jpg',
     title: 'Exhibition',
+    link:'/Exhibition'
   },
   {
     id: 'world-4',

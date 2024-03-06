@@ -18,6 +18,7 @@ import ManagementCarousel from './ManagementCarousel';
 import GamingCarousel from './GamingCarousel';
 import OthersCarousel from  './OthersCarousel';
 import RoboticsCarousel from './RoboticsCarousel';
+import PartnersPageImages from './PartnersPageImages';
 
 
 
@@ -43,4 +44,5 @@ export {
   Footer2,
   RoboCarousel,
   Gallery,
+  PartnersPageImages,
 };

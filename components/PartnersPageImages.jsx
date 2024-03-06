@@ -10,7 +10,7 @@ import '../styles/globals.css';
 
 
 
-const Gallery = ({ images }) =>{
+const PartnersPageImages = ({images}) =>{
   return (
     
     <div className="bg-primary-black overflow-hidden">
@@ -28,7 +28,7 @@ const Gallery = ({ images }) =>{
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
         
-        <span className="font-extrabold text-white">Here, you can explore all the captivating and mesmerizing moments of IEM-INNOVACION </span>
+        <span className="font-extrabold text-white">PARTNERS </span>
         </motion.p>
         </motion.div>
       
@@ -38,7 +38,7 @@ const Gallery = ({ images }) =>{
           key={index}
           src={image.src}
           alt={image.alt}
-          className='w-1/2 p-2 rounded-xl lg:w-1/3'
+          className='w-1/8 h-auto p-2 rounded-xl xs:w-1/4'
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: index * 0.1 }}
@@ -54,4 +54,4 @@ const Gallery = ({ images }) =>{
   );
 };
 
-export default Gallery;
+export default PartnersPageImages;

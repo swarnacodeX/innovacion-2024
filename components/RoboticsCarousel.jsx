@@ -2,7 +2,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from '../styles';
 import Image from 'next/image';
 import { TitleText } from '.';
@@ -16,6 +16,88 @@ const RoboticsCarousel = () => {
     };
     init();
   }, []);
+  const [loading, setLoading] = useState(false);
+  const PDFHELLINACELL = async () => {
+    try {
+        setLoading(true);
+        // Fetch the PDF file from the server or external source
+        const response = await fetch('/rulebook/HELL IN A CELL RuleBook.pdf'); // Replace with the actual path to your PDF file
+        const blob = await response.blob();
+  
+        // Create a temporary link element
+        const link = document.createElement('a');
+        const url = window.URL.createObjectURL(blob);
+  
+        // Set the href attribute to the Blob object representing the PDF file
+        link.href = url;
+        // Set the download attribute to specify the filename
+        link.download = 'HELL IN A CELL-rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+  
+        // Append the link to the document body
+        document.body.appendChild(link);
+  
+        // Programmatically trigger the click event on the link
+        link.click();
+  
+        // Cleanup
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+    } catch (error) {
+        console.error('Error downloading PDF:', error);
+    } finally {
+        setLoading(false);
+    }
+  };
+  const PDFROBO = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/ROBOPACE Rule book.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'ROBOPACE rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  const PDFTRACKER = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/TRACKER RuleBook.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'Tracker rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     
@@ -111,15 +193,31 @@ const RoboticsCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+         onClick={PDFTRACKER}
             src="/5.png"
-            alt="stamp" width={0} height={0}
+            alt="stamp" width={155}
+            height={155}
             className="w-[155px] h-[155px] object-contain"
           />
+         
+        </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFTRACKER}
+            src="/5.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+         
         </motion.div>
       </motion.div>
      </motion.div> 
@@ -165,15 +263,31 @@ const RoboticsCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+         onClick={PDFROBO}
             src="/5.png"
-            alt="stamp" width={900} height={550}
+            alt="stamp" width={155}
+            height={155}
             className="w-[155px] h-[155px] object-contain"
           />
+         
+        </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFROBO}
+            src="/5.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+         
         </motion.div>
       </motion.div>
      </motion.div> 
@@ -219,15 +333,31 @@ const RoboticsCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+         onClick={PDFHELLINACELL}
             src="/5.png"
-            alt="stamp" width={155} height={155}
+            alt="stamp" width={155}
+            height={155}
             className="w-[155px] h-[155px] object-contain"
           />
+         
+        </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+          onClick={PDFHELLINACELL}
+            src="/5.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+         
         </motion.div>
       </motion.div>
      </motion.div> 

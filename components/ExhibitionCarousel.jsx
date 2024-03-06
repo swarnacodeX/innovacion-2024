@@ -2,7 +2,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from '../styles';
 import Image from 'next/image';
 import { TitleText } from '.';
@@ -16,6 +16,32 @@ const ExhibitionCarousel = () => {
     };
     init();
   }, []);
+  const [loading, setLoading] = useState(false);
+  const PDFINNOVARE = async () => {
+    setLoading(true);
+    try {
+      // Fetch the PDF file from the server or external source
+      const response = await fetch('/rulebook/INNOVARE and SCIENCE Model Exhibition.pdf'); // Replace with the actual path to your PDF file
+      const blob = await response.blob();
+
+      // Create a temporary link element
+      const link = document.createElement('a');
+      // Set the href attribute to the Blob object representing the PDF file
+      link.href = window.URL.createObjectURL(new Blob([blob]));
+      // Set the download attribute to specify the filename
+      link.download = 'Innovare and Science model exhibition rulebook.pdf'; // Replace with the desired filename for the downloaded PDF file
+      // Append the link to the document body
+      document.body.appendChild(link);
+      // Programmatically trigger the click event on the link
+      link.click();
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     
@@ -117,16 +143,29 @@ const ExhibitionCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+           onClick={PDFINNOVARE}
             src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+           onClick={PDFINNOVARE}
+            src="/6.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+          </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -174,16 +213,29 @@ const ExhibitionCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+           onClick={PDFINNOVARE}
             src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+           onClick={PDFINNOVARE}
+            src="/6.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+          </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -228,16 +280,29 @@ const ExhibitionCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+           onClick={PDFINNOVARE}
             src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+           onClick={PDFINNOVARE}
+            src="/6.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+          </motion.div>
       </motion.div>
      </motion.div> 
     </div>
@@ -282,16 +347,29 @@ const ExhibitionCarousel = () => {
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
         />
 
-        <motion.div
+<motion.div
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <Image
+           onClick={PDFINNOVARE}
             src="/6.png"
             alt="stamp" width={155} height={155}
             className="w-[155px] h-[155px] object-contain"
           />
         </motion.div>
+        <motion.div
+          variants={zoomIn(0.4, 1)}
+          className="lg:block absolute -left-[-55%] top-[-40%]"
+        >
+          <Image
+           onClick={PDFINNOVARE}
+            src="/6.png"
+            alt="stamp" width={155}
+            height={155}
+            className="w-[155px] h-[155px] object-contain"
+          />
+          </motion.div>
       </motion.div>
      </motion.div> 
     </div>
