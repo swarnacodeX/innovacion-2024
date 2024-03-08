@@ -11,7 +11,6 @@ const PartnersImages = [
   { src: "../partnerlogo/otherlogos/1.png", alt: 'Image 3' },
   { src: "../partnerlogo/otherlogos/2.png", alt: 'Image 3' },
   { src: "../partnerlogo/otherlogos/3.png", alt: 'Image 3' },
-  { src: "../partnerlogo/otherlogos/4.png", alt: 'Image 3' },
   { src: "../partnerlogo/otherlogos/5.png", alt: 'Image 3' },
   { src: "../partnerlogo/otherlogos/6.png", alt: 'Image 3' },
   { src: "../partnerlogo/otherlogos/7.png", alt: 'Image 3' },
