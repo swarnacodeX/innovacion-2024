@@ -51,9 +51,9 @@ export const startingFeatures2 = [
 export const newFeatures = [
   {
     imgUrl: '/vrpano.svg',
-    title: 'Special offer',
+    title: 'Notice',
     subtitle:
-        'Central Registration Rs. 400. 2nd Phase Early Bird Registration Rs. 350   Early Bird offers remains till 3rd March, 2024',
+        'Online Central registrations are closed. Offline central registrations are open in IEM Gurukul, IEM Management and IEM Ashram campus. For event registrations FIFA ,HELL IN A CELL, ROBOPACE & 360CODECRAFT are open via online and offline modes.',
   },
   {
     imgUrl: '/headset.svg',
