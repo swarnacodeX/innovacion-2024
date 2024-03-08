@@ -6,7 +6,7 @@ import styles from '../styles';
 import { navVariants } from '../utils/motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import {Collapse} from "@material-tailwind/react";
+import {Button, Collapse} from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 
@@ -18,6 +18,32 @@ const Navbar = () => {
     if (getStartedSection) {
       getStartedSection.scrollIntoView({ behavior: 'smooth' });
     }
+};
+const [loading, setLoading] = useState(false);
+const SCHEDULEEXCEL = async () => {
+  setLoading(true);
+  try {
+    // Fetch the PDF file from the server or external source
+    const response = await fetch('/PROGRAMME SCHEDULE FINAL.xlsx'); // Replace with the actual path to your PDF file
+    const blob = await response.blob();
+
+    // Create a temporary link element
+    const link = document.createElement('a');
+    // Set the href attribute to the Blob object representing the PDF file
+    link.href = window.URL.createObjectURL(new Blob([blob]));
+    // Set the download attribute to specify the filename
+    link.download = 'SCHEDULE.xlsx'; // Replace with the desired filename for the downloaded PDF file
+    // Append the link to the document body
+    document.body.appendChild(link);
+    // Programmatically trigger the click event on the link
+    link.click();
+    // Remove the link from the document body
+    document.body.removeChild(link);
+  } catch (error) {
+    console.error('Error downloading PDF:', error);
+  } finally {
+    setLoading(false);
+  }
 };
 const handleWindowResize = () => {
     setShowMobileNav(window.innerWidth < 960);
@@ -52,7 +78,7 @@ const handleWindowResize = () => {
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/'>Home</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/AboutPage'>About</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/Events'>Events</Link>
-      <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/Schedules'>Schedules</Link>
+      <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='#' onClick={SCHEDULEEXCEL}>Schedules</Link>
 
       
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/GalleryPage'>Gallery</Link>
@@ -80,7 +106,7 @@ const handleWindowResize = () => {
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/'>Home</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/AboutPage'>About</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/Events'>Events</Link>
-      <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/Schedules'>Schedules</Link>
+      <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='#' onClick={SCHEDULEEXCEL}>Schedules</Link>
 
       
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/GalleryPage'>Gallery</Link>
