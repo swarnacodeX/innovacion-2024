@@ -19,9 +19,10 @@
     "eslint-config-next": "13.0.3",
     "framer-motion": "^7.10.3",
     "innovacion-2024": "file:",
-    "next": "^13.5.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "innovacion-2024-1": "file:",
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-responsive": "^9.0.2",
     "react-router-dom": "^6.22.2",
     "tw-elements": "^1.1.0"
