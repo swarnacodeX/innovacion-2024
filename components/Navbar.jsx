@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 "use client";
 
 import { motion } from 'framer-motion';
@@ -79,7 +79,7 @@ const handleWindowResize = () => {
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/'>Home</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/AboutPage'>About</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/Events'>Events</Link>
-      <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='#' onClick={SCHEDULEEXCEL}>Schedules</Link>
+      {/* <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='#' onClick={SCHEDULEEXCEL}>Schedules</Link> */}
 
       
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/GalleryPage'>Gallery</Link>
@@ -107,7 +107,7 @@ const handleWindowResize = () => {
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/'>Home</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/AboutPage'>About</Link>
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/Events'>Events</Link>
-      <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='#' onClick={SCHEDULEEXCEL}>Schedules</Link>
+      {/* <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='#' onClick={SCHEDULEEXCEL}>Schedules</Link> */}
 
       
       <Link className=" p-1 font-medium text-white text-neon-glow no-underline"  href='/GalleryPage'>Gallery</Link>
