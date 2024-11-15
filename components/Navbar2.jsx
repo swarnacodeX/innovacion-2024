@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 "use client";
 
 import { motion } from 'framer-motion';
